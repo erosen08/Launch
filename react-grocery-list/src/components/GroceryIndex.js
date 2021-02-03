@@ -10,7 +10,6 @@ class GroceryIndex extends React.Component {
         <GroceryTile
           key = {grocery.id}
           name = {grocery.name}
-          handleButtonClick = {grocery.handleButtonClick}
         />
       )
     })
