@@ -13,12 +13,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Grocery List</h1>
-        <GroceryIndex
-          groceries = {groceryData}
-          handleButtonClick={event => {
-            alert("Button was clicked")
-          }}
-        />
+        <GroceryIndex groceries = {groceryData}/>
       </div>
     )
   }

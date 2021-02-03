@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from './Button'
+
 class GroceryTile extends React.Component {
 
   render() {
@@ -7,7 +9,7 @@ class GroceryTile extends React.Component {
     return (
       <div>
         {this.props.name}
-        <button type='Button' onClick = {this.props.handleButtonClick}>Delete</button>
+        <Button />
       </div>
     )
   }
