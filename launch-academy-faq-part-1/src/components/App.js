@@ -1,8 +1,13 @@
 import React from 'react';
+import FAQIndex from './FAQIndex'
 
 const App = (props) => {
+
   return(
-    <div>hello from your react app</div>
+    <div>
+      <h1>We're here to help!</h1>
+      <FAQIndex data={props.data} />
+    </div>
   )
 }
 
