@@ -4,7 +4,7 @@ const Playlist = props => {
 
   return (
     <div>
-      {props.name}
+      <p onClick={props.handleClick} className={props.className}>{props.name}</p>
     </div>
   )
 }
