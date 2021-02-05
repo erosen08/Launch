@@ -1,8 +1,12 @@
 import React from 'react';
+import DogIndex from './DogIndex'
 
 const App = props => {
+
   return(
-    <h1>Place Fluffballs here</h1>
+    <div>
+      <DogIndex dogs={props.data.dogs} />
+    </div>
   )
 }
 
