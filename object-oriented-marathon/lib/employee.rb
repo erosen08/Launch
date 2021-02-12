@@ -1,11 +1,10 @@
 class Employee
 
-  attr_reader :name, :title, :cages
+  attr_reader :name, :title
 
-  def initialize(name, title='Zoo Keeper', cages=10)
+  def initialize(name, title='Zoo Keeper')
     @name = name
     @title = title
-    @cages = cages
   end
 
   def full_title
