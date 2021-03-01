@@ -23,6 +23,23 @@ recipe = {
     "Shake the pan from time to time to brown the sprouts evenly.",
     "Sprinkle with more kosher salt ( I like these salty like French fries).",
     "Serve and enjoy!"
+  ],
+  reviews: [
+    {
+      :username => "JonC",
+      :rating => 3,
+      :review => "Mediocre"
+    },
+    {
+      :username => "BobF",
+      :rating => 5,
+      :review => "Best Ever"
+    },
+    {
+      :username => "MelanieR",
+      :rating => 1,
+      :review => "Terrible"
+    }
   ]
 }
 
@@ -30,6 +47,7 @@ get '/' do
   @name = recipe[:name]
   @ingredients = recipe[:ingredients]
   @directions = recipe[:directions]
+  @reviews = recipe[:reviews]
 
   erb :index
 end
