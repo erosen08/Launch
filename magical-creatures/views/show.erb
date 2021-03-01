@@ -1,0 +1,19 @@
+<body>
+
+  <h1>
+    <%= @creature %>
+  </h1>
+
+  <% @creatures.each do |creature| %>
+    <% if creature[:name] == @creature %>
+      Ability: <%= creature[:ability] %>
+      <br>
+      Age: <%= creature[:age] %>
+      <br>
+    <% end %>
+  <% end %>
+  <br>
+  <br>
+  <a href="/creatures">All Magical Creatures</a>
+  
+</body>

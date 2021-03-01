@@ -1,0 +1,12 @@
+<body>
+
+  <h3>
+    A list of magical creatures!
+  </h3>
+
+  <% @creatures.each do |creature| %>
+    <li>
+      <a href="/creatures/<%=creature[:name] %>"><%=  creature[:name] %></li>
+  <% end %>
+
+</body>
